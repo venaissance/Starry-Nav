@@ -1,0 +1,183 @@
+/* css reset */
+* {
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 180%;
+  max-height: 100%;
+}
+
+/* style */
+body {
+  /* 背景颜色会扩展到整个页面 */
+  background-color: #eee;
+}
+
+.globalHeader {
+}
+
+.formSearch {
+  margin: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  .formSearch {
+    max-width: 400px;
+    margin: 80px auto 80px auto;
+  }
+}
+
+.formSearch > input {
+  width: 100%;
+  padding: 10px 12px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 18px;
+}
+
+.formSearch > button {
+  white-space: nowrap;
+  margin-left: 16px;
+  padding: 0 26px;
+  background: #06a7cb;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #ffffff;
+}
+
+.globalMain {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.siteList {
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+  .siteList {
+    margin-left: 0;
+    margin-right: -25px;
+    justify-content: flex-start;
+  }
+
+  .siteList > li {
+    margin-right: 25px;
+  }
+
+  .siteList .site > .remove {
+    display: none;
+  }
+
+  /* 浮动上去才显示移除按钮，默认先display: none; */
+  .siteList .site:hover > .remove {
+    display: block;
+    cursor: default;
+  }
+}
+
+.siteList > li {
+  margin-bottom: 20px;
+}
+
+.siteList .site {
+  width: 160px;
+  padding: 26px 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  position: relative;
+  /* 鼠标变成🤚形状，默认是default */
+  cursor: pointer;
+}
+
+.siteList .site > .logo {
+  height: 64px;
+  width: 64px;
+  font-size: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* logo全大写 */
+  text-transform: uppercase;
+}
+
+.siteList .site > .link {
+  font-size: 18px;
+  margin-top: 4px;
+}
+
+.siteList .site > .remove {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+  font-size: 24px;
+}
+
+.siteList .addButton {
+  width: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 26px 0;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.siteList .addButton .icon {
+  height: 56px;
+  width: 56px;
+}
+
+.siteList .addButton .iconWrapper {
+  height: 64px;
+  width: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.siteList .addButton .text {
+  margin-top: 4px;
+  font-size: 15px;
+}
+
+
+/*# sourceMappingURL=style.120b4e72.css.map */
